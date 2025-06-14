@@ -1,4 +1,4 @@
-# MIFrame
+# MultiFrameKit
 
 The MIFrame framework defines "Frame" object for macOS and iOS.
 The frame is used to implement components besed on it:
