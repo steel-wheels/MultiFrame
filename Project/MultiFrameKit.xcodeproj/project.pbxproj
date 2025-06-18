@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0519CD512DFEB35B004926F8 /* MINativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MINativeValue.swift */; };
+		0519CD522DFEB35B004926F8 /* MINativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MINativeValue.swift */; };
+		05BDD2C32DFD678F00D4372C /* MIFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MIFrame.swift */; };
+		05BDD2C42DFD678F00D4372C /* MIFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MIFrame.swift */; };
+		05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
+		05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
+		05BDD2E12DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
+		05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
+		05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
+		05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		05E137B82DFD5E0B00D668A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,8 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0519CD502DFEB35B004926F8 /* MINativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINativeValue.swift; sourceTree = "<group>"; };
+		05BDD2C22DFD678F00D4372C /* MIFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIFrame.swift; sourceTree = "<group>"; };
+		05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiDataKit.xcframework; path = ../../../Library/Frameworks/MultiDataKit.xcframework; sourceTree = "<group>"; };
+		05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIObserverDictionary.swift; sourceTree = "<group>"; };
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIScriptValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -46,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,17 +72,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05BDD2C02DFD672800D4372C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05BDD2C12DFD674E00D4372C /* Base */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		05BDD2C12DFD674E00D4372C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				05BDD2C22DFD678F00D4372C /* MIFrame.swift */,
+				05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */,
+				0519CD502DFEB35B004926F8 /* MINativeValue.swift */,
+				05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		05BDD2C52DFD6BD500D4372C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		05E137902DFD5D8100D668A1 = {
 			isa = PBXGroup;
 			children = (
 				05E1379C2DFD5D8100D668A1 /* MultiFrameKit_macOS */,
 				05E137AC2DFD5DD400D668A1 /* MultiFrameKit_iOS */,
+				05BDD2C02DFD672800D4372C /* Source */,
+				05BDD2C52DFD6BD500D4372C /* Frameworks */,
 				05E1379B2DFD5D8100D668A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,6 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */,
+				0519CD522DFEB35B004926F8 /* MINativeValue.swift in Sources */,
+				05BDD2C32DFD678F00D4372C /* MIFrame.swift in Sources */,
+				05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BDD2E12DFD866900D4372C /* MIObserverDictionary.swift in Sources */,
+				0519CD512DFEB35B004926F8 /* MINativeValue.swift in Sources */,
+				05BDD2C42DFD678F00D4372C /* MIFrame.swift in Sources */,
+				05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
