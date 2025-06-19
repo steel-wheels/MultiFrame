@@ -17,6 +17,8 @@
 		05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
 		05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
 		05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
+		05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E6D2E04568700FB254C /* MIApplication.swift */; };
+		05FA0E6F2E04568700FB254C /* MIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E6D2E04568700FB254C /* MIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIScriptValue.swift; sourceTree = "<group>"; };
 		05FA0E582E02664300FB254C /* UnitTest_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FA0E6D2E04568700FB254C /* MIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MIApplication.swift; path = /Users/tomoo/Project/MultiFrameKit/Source/Application/MIApplication.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -103,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				05BDD2C12DFD674E00D4372C /* Base */,
+				05FA0E6C2E0455B800FB254C /* Application */,
 			);
 			name = Source;
 			path = ../Source;
@@ -173,6 +177,14 @@
 			children = (
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		05FA0E6C2E0455B800FB254C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				05FA0E6D2E04568700FB254C /* MIApplication.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */,
+				05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MIFrame.swift in Sources */,
 				05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
@@ -372,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E12DFD866900D4372C /* MIObserverDictionary.swift in Sources */,
+				05FA0E6F2E04568700FB254C /* MIApplication.swift in Sources */,
 				0519CD512DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MIFrame.swift in Sources */,
 				05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
