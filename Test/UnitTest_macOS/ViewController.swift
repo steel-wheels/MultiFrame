@@ -15,13 +15,10 @@ class ViewController: NSViewController {
                 super.viewDidLoad()
 
                 // Do any additional setup after loading the view.
-                let vm          = JSVirtualMachine()
-                guard let context = JSContext(virtualMachine: vm) else {
-                        NSLog("[Error] Failed to allocate context")
-                        return
-                }
+                let vm  = JSVirtualMachine()
+                let context     = MIScriptContext(virtualMachine: vm!)
                 let application = MIApplication(context: context)
-                application.boot(context: context)
+                let _ = application.boot(context: context)
         }
 
         override var representedObject: Any? {

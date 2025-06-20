@@ -15,12 +15,12 @@
 		05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
 		05BDD2E12DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
 		05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
-		05F71C9B2E0581BD008509D8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 05F71C982E0581BC008509D8 /* Makefile */; };
-		05F71C9C2E0581BD008509D8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 05F71C982E0581BC008509D8 /* Makefile */; };
 		05F71CB22E058B81008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
 		05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
 		05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
 		05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
+		05F71CB82E05B1BD008509D8 /* MIScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MIScriptContext.swift */; };
+		05F71CB92E05B1BD008509D8 /* MIScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MIScriptContext.swift */; };
 		05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
 		05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
 		05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E6D2E04568700FB254C /* MIApplication.swift */; };
@@ -91,6 +91,7 @@
 		05F71C962E0581BC008509D8 /* Frame.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Frame.js; sourceTree = "<group>"; };
 		05F71C972E0581BC008509D8 /* Frame.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Frame.ts; sourceTree = "<group>"; };
 		05F71C982E0581BC008509D8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		05F71CB72E05B1BD008509D8 /* MIScriptContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIScriptContext.swift; sourceTree = "<group>"; };
 		05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIScriptValue.swift; sourceTree = "<group>"; };
 		05FA0E582E02664300FB254C /* UnitTest_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FA0E6D2E04568700FB254C /* MIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MIApplication.swift; path = /Users/tomoo/Project/MultiFrameKit/Source/Application/MIApplication.swift; sourceTree = "<absolute>"; };
@@ -158,6 +159,7 @@
 				05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */,
 				0519CD502DFEB35B004926F8 /* MINativeValue.swift */,
 				05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */,
+				05F71CB72E05B1BD008509D8 /* MIScriptContext.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -417,7 +419,7 @@
 				05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MIFrame.swift in Sources */,
-				05F71C9C2E0581BD008509D8 /* Makefile in Sources */,
+				05F71CB92E05B1BD008509D8 /* MIScriptContext.swift in Sources */,
 				05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +433,7 @@
 				0519CD512DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MIFrame.swift in Sources */,
 				05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
-				05F71C9B2E0581BD008509D8 /* Makefile in Sources */,
+				05F71CB82E05B1BD008509D8 /* MIScriptContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

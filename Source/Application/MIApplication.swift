@@ -17,12 +17,14 @@ public class MIApplication: MIFrame
 
         public var core: MIFrameCore { get { return mCore }}
 
-        public init(context ctxt: JSContext){
+        public init(context ctxt: MIScriptContext){
                 mCore = MIFrameCore(frameName: MIApplication.FrameName, context: ctxt)
         }
 
-        public func boot(context ctxt: JSContext){
-                NSLog("boot: define application object")
+        public func boot(context ctxt: MIScriptContext) -> Int {
+                var errcount: Int = 0 ;
+
+                NSLog("context: define application object")
                 ctxt.setObject(mCore, forKeyedSubscript: MIApplication.CoreName as NSString)
 
                 if let resdir = FileManager.default.resourceDirectory(forClass: MIApplication.self) {
@@ -31,26 +33,14 @@ public class MIApplication: MIFrame
                                 "Application.js"
                         ]
                         for filename in filenames {
-                                let resfile = resdir.appending(path: "Library/" + filename)
-                                switch loadScript(from: resfile) {
-                                case .success(let script):
-                                        NSLog("loaded: \(script)")
-                                case .failure(let error):
-                                        NSLog("[Error] " + MIError.errorToString(error: error))
-                                }
+                                NSLog("context: parse \(filename)")
+                                errcount += ctxt.compileScript(resourceDirectory: resdir, fileName: filename)
                         }
                 } else {
                         NSLog("[Error] Failed to get resource directory")
+                        errcount += 1
                 }
-        }
-        private func loadScript(from url: URL) -> Result<String, NSError> {
-                do {
-                        let text = try String(contentsOf: url, encoding: .utf8)
-                        return .success(text)
-                } catch {
-                        return .failure(MIError.error(errorCode: .fileError,
-                                                      message: "Failed to load from URL \(url.path)"))
-                }
+                return errcount
         }
 }
 
