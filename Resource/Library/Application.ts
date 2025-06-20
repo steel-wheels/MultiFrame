@@ -1,6 +1,14 @@
+/*
+ * Application.ts
+ */
 
-function add(a: number, b: number): number
+/// <reference path="types/Builtin.d.ts"/>
+/// <reference path="types/Frame.d.ts"/>
+
+class Application extends Frame
 {
-	return a +b ;
+	constructor(){
+		super(_application) ;
+	}
 }
 

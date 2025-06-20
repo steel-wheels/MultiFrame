@@ -1,1 +1,3 @@
-declare function add(a: number, b: number): number;
+declare class Application extends Frame {
+    constructor();
+}

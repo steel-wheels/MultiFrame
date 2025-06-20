@@ -2,7 +2,8 @@
 # Makefile for Library
 #
 
-src_scrs	= Application.ts
+src_scrs	= Frame.ts \
+		  Application.ts
 dst_scrs	= $(src_scrs:.ts=.js)
 
 tsc	= npx tsc
@@ -17,7 +18,6 @@ all: $(dst_scrs)
 
 clean:
 	rm -f $(dst_scrs)
-	rm -rf types
 
 # <reference path="KiwiLibrary.d.ts"
 #$(dst_decl): $(src_decls) types/Transpiler.d.ts

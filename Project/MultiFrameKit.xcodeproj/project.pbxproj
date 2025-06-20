@@ -15,6 +15,12 @@
 		05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
 		05BDD2E12DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
 		05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
+		05F71C9B2E0581BD008509D8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 05F71C982E0581BC008509D8 /* Makefile */; };
+		05F71C9C2E0581BD008509D8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 05F71C982E0581BC008509D8 /* Makefile */; };
+		05F71CB22E058B81008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
+		05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
+		05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
+		05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
 		05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
 		05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */; };
 		05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E6D2E04568700FB254C /* MIApplication.swift */; };
@@ -45,6 +51,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		05F71CB12E058B69008509D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library;
+			dstSubfolderSpec = 7;
+			files = (
+				05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */,
+				05F71CB22E058B81008509D8 /* Application.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F71CB42E058BAC008509D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library;
+			dstSubfolderSpec = 7;
+			files = (
+				05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */,
+				05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0519CD502DFEB35B004926F8 /* MINativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINativeValue.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MIFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIFrame.swift; sourceTree = "<group>"; };
@@ -52,6 +83,14 @@
 		05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIObserverDictionary.swift; sourceTree = "<group>"; };
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F71C912E0581A3008509D8 /* Application.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Application.d.ts; sourceTree = "<group>"; };
+		05F71C922E0581A3008509D8 /* Builtin.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Builtin.d.ts; sourceTree = "<group>"; };
+		05F71C932E0581A3008509D8 /* Frame.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Frame.d.ts; sourceTree = "<group>"; };
+		05F71C942E0581BC008509D8 /* Application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Application.js; sourceTree = "<group>"; };
+		05F71C952E0581BC008509D8 /* Application.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Application.ts; sourceTree = "<group>"; };
+		05F71C962E0581BC008509D8 /* Frame.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Frame.js; sourceTree = "<group>"; };
+		05F71C972E0581BC008509D8 /* Frame.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Frame.ts; sourceTree = "<group>"; };
+		05F71C982E0581BC008509D8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		05FA0E512DFF0F7D00FB254C /* MIScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIScriptValue.swift; sourceTree = "<group>"; };
 		05FA0E582E02664300FB254C /* UnitTest_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FA0E6D2E04568700FB254C /* MIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MIApplication.swift; path = /Users/tomoo/Project/MultiFrameKit/Source/Application/MIApplication.swift; sourceTree = "<absolute>"; };
@@ -154,6 +193,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		05F71C902E058147008509D8 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				05F71C912E0581A3008509D8 /* Application.d.ts */,
+				05F71C922E0581A3008509D8 /* Builtin.d.ts */,
+				05F71C932E0581A3008509D8 /* Frame.d.ts */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
 		05FA0E672E02665300FB254C /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +224,12 @@
 		05FA0E6B2E0300C100FB254C /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				05F71C902E058147008509D8 /* types */,
+				05F71C942E0581BC008509D8 /* Application.js */,
+				05F71C952E0581BC008509D8 /* Application.ts */,
+				05F71C962E0581BC008509D8 /* Frame.js */,
+				05F71C972E0581BC008509D8 /* Frame.ts */,
+				05F71C982E0581BC008509D8 /* Makefile */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -235,7 +290,7 @@
 				05E137952DFD5D8100D668A1 /* Headers */,
 				05E137962DFD5D8100D668A1 /* Sources */,
 				05E137972DFD5D8100D668A1 /* Frameworks */,
-				05E137982DFD5D8100D668A1 /* Resources */,
+				05F71CB12E058B69008509D8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -258,7 +313,7 @@
 				05E137A62DFD5DD400D668A1 /* Headers */,
 				05E137A72DFD5DD400D668A1 /* Sources */,
 				05E137A82DFD5DD400D668A1 /* Frameworks */,
-				05E137A92DFD5DD400D668A1 /* Resources */,
+				05F71CB42E058BAC008509D8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -344,20 +399,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		05E137982DFD5D8100D668A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05E137A92DFD5DD400D668A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		05FA0E562E02664300FB254C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +417,7 @@
 				05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MIFrame.swift in Sources */,
+				05F71C9C2E0581BD008509D8 /* Makefile in Sources */,
 				05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +431,7 @@
 				0519CD512DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MIFrame.swift in Sources */,
 				05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
+				05F71C9B2E0581BD008509D8 /* Makefile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
