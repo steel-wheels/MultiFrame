@@ -27,10 +27,29 @@ public class MIApplication: MIFrame
                 NSLog("context: define application object")
                 ctxt.setObject(mCore, forKeyedSubscript: MIApplication.CoreName as NSString)
 
+                NSLog("context: define console object")
+                let console = MIConsole()
+                ctxt.setObject(console, forKeyedSubscript: MIConsole.VariableName as NSString)
+
+                NSLog("context: import libraries")
                 if let resdir = FileManager.default.resourceDirectory(forClass: MIApplication.self) {
                         let filenames: Array<String> = [
                                 "Frame.js",
                                 "Application.js"
+                        ]
+                        for filename in filenames {
+                                NSLog("context: parse \(filename)")
+                                errcount += ctxt.compileScript(resourceDirectory: resdir, fileName: filename)
+                        }
+                } else {
+                        NSLog("[Error] Failed to get resource directory")
+                        errcount += 1
+                }
+
+                NSLog("context: execute boot code")
+                if let resdir = FileManager.default.resourceDirectory(forClass: MIApplication.self) {
+                        let filenames: Array<String> = [
+                                "Boot.js"
                         ]
                         for filename in filenames {
                                 NSLog("context: parse \(filename)")

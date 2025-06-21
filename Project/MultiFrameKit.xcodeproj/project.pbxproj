@@ -15,6 +15,10 @@
 		05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
 		05BDD2E12DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
 		05BDD2E22DFD866900D4372C /* MIObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */; };
+		05CED89E2E06CC110028C549 /* MIConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MIConsole.swift */; };
+		05CED89F2E06CC110028C549 /* MIConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MIConsole.swift */; };
+		05CED8A22E06CFC70028C549 /* Boot.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05CED8A02E06CF380028C549 /* Boot.js */; };
+		05CED8A32E06CFD20028C549 /* Boot.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05CED8A02E06CF380028C549 /* Boot.js */; };
 		05F71CB22E058B81008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
 		05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
 		05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
@@ -58,6 +62,7 @@
 			dstPath = Library;
 			dstSubfolderSpec = 7;
 			files = (
+				05CED8A22E06CFC70028C549 /* Boot.js in CopyFiles */,
 				05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */,
 				05F71CB22E058B81008509D8 /* Application.js in CopyFiles */,
 			);
@@ -69,6 +74,7 @@
 			dstPath = Library;
 			dstSubfolderSpec = 7;
 			files = (
+				05CED8A32E06CFD20028C549 /* Boot.js in CopyFiles */,
 				05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */,
 				05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */,
 			);
@@ -81,6 +87,9 @@
 		05BDD2C22DFD678F00D4372C /* MIFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIFrame.swift; sourceTree = "<group>"; };
 		05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiDataKit.xcframework; path = ../../../Library/Frameworks/MultiDataKit.xcframework; sourceTree = "<group>"; };
 		05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIObserverDictionary.swift; sourceTree = "<group>"; };
+		05CED89D2E06CC110028C549 /* MIConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIConsole.swift; sourceTree = "<group>"; };
+		05CED8A02E06CF380028C549 /* Boot.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Boot.js; sourceTree = "<group>"; };
+		05CED8A12E06CF380028C549 /* Boot.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Boot.ts; sourceTree = "<group>"; };
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F71C912E0581A3008509D8 /* Application.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Application.d.ts; sourceTree = "<group>"; };
@@ -155,6 +164,7 @@
 		05BDD2C12DFD674E00D4372C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				05CED89D2E06CC110028C549 /* MIConsole.swift */,
 				05BDD2C22DFD678F00D4372C /* MIFrame.swift */,
 				05BDD2E02DFD866900D4372C /* MIObserverDictionary.swift */,
 				0519CD502DFEB35B004926F8 /* MINativeValue.swift */,
@@ -231,6 +241,8 @@
 				05F71C952E0581BC008509D8 /* Application.ts */,
 				05F71C962E0581BC008509D8 /* Frame.js */,
 				05F71C972E0581BC008509D8 /* Frame.ts */,
+				05CED8A02E06CF380028C549 /* Boot.js */,
+				05CED8A12E06CF380028C549 /* Boot.ts */,
 				05F71C982E0581BC008509D8 /* Makefile */,
 			);
 			path = Library;
@@ -419,6 +431,7 @@
 				05FA0E6E2E04568700FB254C /* MIApplication.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MIFrame.swift in Sources */,
+				05CED89E2E06CC110028C549 /* MIConsole.swift in Sources */,
 				05F71CB92E05B1BD008509D8 /* MIScriptContext.swift in Sources */,
 				05FA0E532DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
 			);
@@ -432,6 +445,7 @@
 				05FA0E6F2E04568700FB254C /* MIApplication.swift in Sources */,
 				0519CD512DFEB35B004926F8 /* MINativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MIFrame.swift in Sources */,
+				05CED89F2E06CC110028C549 /* MIConsole.swift in Sources */,
 				05FA0E522DFF0F7D00FB254C /* MIScriptValue.swift in Sources */,
 				05F71CB82E05B1BD008509D8 /* MIScriptContext.swift in Sources */,
 			);
