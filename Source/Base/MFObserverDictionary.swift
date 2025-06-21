@@ -1,13 +1,13 @@
 /**
- * @file        MIObserverDictionary.swift
- * @brief      Define  MIObserverDictionary. class
+ * @file        MFObserverDictionary.swift
+ * @brief      Define  MFObserverDictionary. class
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
  */
 
 import Foundation
 
-public class MIObserverDictionary
+public class MFObserverDictionary
 {
         public typealias ListenerFunction = (Any?) -> Void        // new-value
 

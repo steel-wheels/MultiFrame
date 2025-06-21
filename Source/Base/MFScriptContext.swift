@@ -1,5 +1,5 @@
 /**
- * @file        MIScriptContext.swift
+ * @file        MFScriptContext.swift
  * @brief     JavaScript Context Manager
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
@@ -9,7 +9,7 @@ import MultiDataKit
 import JavaScriptCore
 import Foundation
 
-public class MIScriptContext: JSContext
+public class MFScriptContext: JSContext
 {
         public typealias ExceptionCallback =  (_ exception: MIScriptException) -> Void
 
@@ -29,7 +29,7 @@ public class MIScriptContext: JSContext
                 /* Set handler */
                 self.exceptionHandler = {
                         [weak self] (context, exception) in
-                        if let myself = self, let ctxt = context as? MIScriptContext {
+                        if let myself = self, let ctxt = context as? MFScriptContext {
                                 let except = MIScriptException(context: ctxt, value: exception)
                                 myself.exceptionCallback(except)
                                 myself.mErrorCount += 1
@@ -65,15 +65,15 @@ public class MIScriptContext: JSContext
 
 public class MIScriptException
 {
-        private var mContext    : MIScriptContext
+        private var mContext    : MFScriptContext
         private var mValue      : JSValue?
 
-        public init(context ctxt: MIScriptContext, value val: JSValue?) {
+        public init(context ctxt: MFScriptContext, value val: JSValue?) {
                 mContext         = ctxt
                 mValue                = val
         }
 
-        public init(context ctxt: MIScriptContext, message msg: String) {
+        public init(context ctxt: MFScriptContext, message msg: String) {
                 mContext        = ctxt
                 mValue          = JSValue(object: msg, in: ctxt)
         }

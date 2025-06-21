@@ -1,6 +1,6 @@
 /**
- * @file        MIApplication.swift
- * @brief     Define MIApplication class
+ * @file        MFApplication.swift
+ * @brief     Define MFApplication class
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
  */
@@ -8,31 +8,31 @@
 import MultiDataKit
 import JavaScriptCore
 
-public class MIApplication: MIFrame
+public class MFApplication: MFFrame
 {
         public static let  FrameName = "application"
         private static let CoreName  = "_application"
 
-        private var mCore: MIFrameCore
+        private var mCore: MFFrameCore
 
-        public var core: MIFrameCore { get { return mCore }}
+        public var core: MFFrameCore { get { return mCore }}
 
-        public init(context ctxt: MIScriptContext){
-                mCore = MIFrameCore(frameName: MIApplication.FrameName, context: ctxt)
+        public init(context ctxt: MFScriptContext){
+                mCore = MFFrameCore(frameName: MFApplication.FrameName, context: ctxt)
         }
 
-        public func boot(context ctxt: MIScriptContext) -> Int {
+        public func boot(context ctxt: MFScriptContext) -> Int {
                 var errcount: Int = 0 ;
 
                 NSLog("context: define application object")
-                ctxt.setObject(mCore, forKeyedSubscript: MIApplication.CoreName as NSString)
+                ctxt.setObject(mCore, forKeyedSubscript: MFApplication.CoreName as NSString)
 
                 NSLog("context: define console object")
-                let console = MIConsole()
-                ctxt.setObject(console, forKeyedSubscript: MIConsole.VariableName as NSString)
+                let console = MFConsole()
+                ctxt.setObject(console, forKeyedSubscript: MFConsole.VariableName as NSString)
 
                 NSLog("context: import libraries")
-                if let resdir = FileManager.default.resourceDirectory(forClass: MIApplication.self) {
+                if let resdir = FileManager.default.resourceDirectory(forClass: MFApplication.self) {
                         let filenames: Array<String> = [
                                 "Frame.js",
                                 "Application.js"
@@ -47,7 +47,7 @@ public class MIApplication: MIFrame
                 }
 
                 NSLog("context: execute boot code")
-                if let resdir = FileManager.default.resourceDirectory(forClass: MIApplication.self) {
+                if let resdir = FileManager.default.resourceDirectory(forClass: MFApplication.self) {
                         let filenames: Array<String> = [
                                 "Boot.js"
                         ]

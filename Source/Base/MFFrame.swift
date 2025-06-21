@@ -1,5 +1,5 @@
 /**
- * @file        MIFrame.swift
+ * @file        MFFrame.swift
  * @brief      Define data types for the Frame
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
@@ -9,21 +9,21 @@ import MultiDataKit
 import Foundation
 import JavaScriptCore
 
-@objc public protocol MIFrameCoreProtorol: JSExport
+@objc public protocol MFFrameCoreProtorol: JSExport
 {
         func _value(_ name: JSValue) -> JSValue
         func _setValue(_ name: JSValue, _ val: JSValue) -> JSValue              // -> boolean
         func _addObserver(_ property: JSValue, _ cbfunc: JSValue) -> JSValue    // -> boolean
 }
 
-public protocol MIFrame
+public protocol MFFrame
 {
-        var core: MIFrameCore { get }
+        var core: MFFrameCore { get }
 }
 
-public extension MIFrame
+public extension MFFrame
 {
-        typealias ListenerFunction = MIObserverDictionary.ListenerFunction
+        typealias ListenerFunction = MFObserverDictionary.ListenerFunction
 
         func value(name nm: String) -> MIValue? {
                 return self.core.value(name: nm)
@@ -38,25 +38,25 @@ public extension MIFrame
         }
 }
 
-@objc public class MIFrameCore: NSObject, MIFrameCoreProtorol
+@objc public class MFFrameCore: NSObject, MFFrameCoreProtorol
 {
-        public typealias ListenerFunction = MIObserverDictionary.ListenerFunction
-        public typealias ListnerHolder    = MIObserverDictionary.ListnerHolder
+        public typealias ListenerFunction = MFObserverDictionary.ListenerFunction
+        public typealias ListnerHolder    = MFObserverDictionary.ListnerHolder
 
         private var mFrameName:         String
-        private var mProperties:        MIObserverDictionary
-        private var mChildren:          Array<MIFrame>
+        private var mProperties:        MFObserverDictionary
+        private var mChildren:          Array<MFFrame>
         private var mListnerHolders:    Array<ListnerHolder>
         private var mContext:           JSContext
 
-        public var parent:              MIFrame?
-        public var children: Array<MIFrame> { get {
+        public var parent:              MFFrame?
+        public var children: Array<MFFrame> { get {
                 return mChildren
         }}
 
         public init(frameName fname: String, context ctxt: JSContext) {
                 mFrameName      = fname
-                mProperties     = MIObserverDictionary()
+                mProperties     = MFObserverDictionary()
                 mChildren       = []
                 mListnerHolders = []
                 mContext        = ctxt

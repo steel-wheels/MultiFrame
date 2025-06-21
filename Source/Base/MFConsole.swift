@@ -1,6 +1,6 @@
 /**
- * @file        MIConsole.swift
- * @brief      Define MIConsole class
+ * @file        MFConsole.swift
+ * @brief      Define MFConsole class
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
  */
@@ -8,13 +8,13 @@
 import JavaScriptCore
 import Foundation
 
-@objc public protocol MIConsoleProtorol: JSExport
+@objc public protocol MFConsoleProtorol: JSExport
 {
         func log(_ name: JSValue)
         func error(_ name: JSValue)
 }
 
-@objc public class MIConsole: NSObject, MIConsoleProtorol
+@objc public class MFConsole: NSObject, MFConsoleProtorol
 {
         public static let VariableName = "console"
 

@@ -9,16 +9,11 @@ import MultiFrameKit
 import JavaScriptCore
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: MFViewController {
 
         override func viewDidLoad() {
                 super.viewDidLoad()
-
                 // Do any additional setup after loading the view.
-                let vm  = JSVirtualMachine()
-                let context     = MIScriptContext(virtualMachine: vm!)
-                let application = MIApplication(context: context)
-                let _ = application.boot(context: context)
         }
 
         override var representedObject: Any? {
