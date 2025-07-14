@@ -6,10 +6,11 @@
 //
 
 import MultiFrameKit
+import MultiUIKit
 import JavaScriptCore
 import Cocoa
 
-class ViewController: MFViewController {
+class ViewController: MIViewController {
 
         override func viewDidLoad() {
                 super.viewDidLoad()
