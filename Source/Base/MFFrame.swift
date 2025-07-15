@@ -16,8 +16,9 @@ import JavaScriptCore
         func _addObserver(_ property: JSValue, _ cbfunc: JSValue) -> JSValue    // -> boolean
 }
 
-public protocol MFFrame
+@MainActor public protocol MFFrame
 {
+        var frameName: String { get }
         var core: MFFrameCore { get }
 }
 
@@ -26,7 +27,11 @@ public extension MFFrame
         typealias ListenerFunction = MFObserverDictionary.ListenerFunction
 
         func value(name nm: String) -> MIValue? {
-                return self.core.value(name: nm)
+                if let obj = self.core.value(name: nm) {
+                        return MIValue.fromObject(object: obj)
+                } else {
+                        return nil
+                }
         }
 
         func setValue(name nm: String, value val: MIValue) {
@@ -69,20 +74,16 @@ public extension MFFrame
                 }
         }
 
-        public func value(name nm: String) -> MIValue? {
-                if let obj = mProperties.value(forKey: nm) {
-                        return MIValue.fromObject(object: obj)
-                } else {
-                        return nil
-                }
+        public func value(name nm: String) -> NSObject? {
+                return mProperties.value(forKey: nm)
         }
 
         public func _value(_ name: JSValue) -> JSValue {
                 guard let nmstr = _name(name: name) else {
                         return JSValue(nullIn: mContext)
                 }
-                if let nval  = value(name: nmstr) {
-                        return JSValue(object: nval.toObject(), in: mContext)
+                if let obj = value(name: nmstr) {
+                        return JSValue(object: obj, in: mContext)
                 } else {
                         return JSValue(nullIn: mContext)
                 }

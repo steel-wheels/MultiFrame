@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
 		0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
+		05A0FC382E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
+		05A0FC392E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
 		05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
@@ -32,8 +34,6 @@
 		05F71CB92E05B1BD008509D8 /* MFScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */; };
 		05FA0E522DFF0F7D00FB254C /* MFScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */; };
 		05FA0E532DFF0F7D00FB254C /* MFScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */; };
-		05FA0E6E2E04568700FB254C /* MFApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E6D2E04568700FB254C /* MFApplication.swift */; };
-		05FA0E6F2E04568700FB254C /* MFApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E6D2E04568700FB254C /* MFApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +83,7 @@
 /* Begin PBXFileReference section */
 		0519CD502DFEB35B004926F8 /* MFNativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNativeValue.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A0FC372E2558940021DF4A /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MFFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFrame.swift; sourceTree = "<group>"; };
 		05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiDataKit.xcframework; path = ../../../Library/Frameworks/MultiDataKit.xcframework; sourceTree = "<group>"; };
 		05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFObserverDictionary.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFScriptContext.swift; sourceTree = "<group>"; };
 		05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFScriptValue.swift; sourceTree = "<group>"; };
 		05FA0E582E02664300FB254C /* UnitTest_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		05FA0E6D2E04568700FB254C /* MFApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MFApplication.swift; path = /Users/tomoo/Project/MultiFrameKit/Source/Application/MFApplication.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -185,6 +185,7 @@
 		05A0FBED2E2555570021DF4A /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				05A0FC372E2558940021DF4A /* MFButton.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -194,7 +195,6 @@
 			children = (
 				05BDD2C12DFD674E00D4372C /* Base */,
 				05A0FBED2E2555570021DF4A /* Controls */,
-				05FA0E6C2E0455B800FB254C /* Application */,
 			);
 			name = Source;
 			path = ../Source;
@@ -289,14 +289,6 @@
 				05F71C982E0581BC008509D8 /* Makefile */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		05FA0E6C2E0455B800FB254C /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				05FA0E6D2E04568700FB254C /* MFApplication.swift */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,8 +502,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
-				05FA0E6E2E04568700FB254C /* MFApplication.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
+				05A0FC392E2558940021DF4A /* MFButton.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */,
 				05F71CB92E05B1BD008509D8 /* MFScriptContext.swift in Sources */,
@@ -524,7 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
-				05FA0E6F2E04568700FB254C /* MFApplication.swift in Sources */,
+				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,
 				0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */,
