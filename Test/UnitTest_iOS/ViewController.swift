@@ -30,12 +30,11 @@ class ViewController: UIViewController
                         return
                 }
 
-                mRootView.boot(instanceName: "rootView", context: context)
-
                 let button0 = MFButton()
-                button0.boot(instanceName: "rootView", context: context)
-
                 mRootView.addSubview(button0)
+
+                mRootView.boot(instanceName: "rootView", context: context)
+                button0.boot(instanceName: "button0", context: context)
         }
 }
 

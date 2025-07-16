@@ -27,8 +27,6 @@
 		05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */; };
 		05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
 		05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
-		05CED8A22E06CFC70028C549 /* Boot.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05CED8A02E06CF380028C549 /* Boot.js */; };
-		05CED8A32E06CFD20028C549 /* Boot.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05CED8A02E06CF380028C549 /* Boot.js */; };
 		05EEB6C22E06F73A000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05EEB6C52E06F74C000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05EEB71A2E07000F000CC067 /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -79,7 +77,6 @@
 			dstPath = Library;
 			dstSubfolderSpec = 7;
 			files = (
-				05CED8A22E06CFC70028C549 /* Boot.js in CopyFiles */,
 				05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,7 +87,6 @@
 			dstPath = Library;
 			dstSubfolderSpec = 7;
 			files = (
-				05CED8A32E06CFD20028C549 /* Boot.js in CopyFiles */,
 				05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +102,6 @@
 		05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiDataKit.xcframework; path = ../../../Library/Frameworks/MultiDataKit.xcframework; sourceTree = "<group>"; };
 		05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFObserverDictionary.swift; sourceTree = "<group>"; };
 		05CED89D2E06CC110028C549 /* MFConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFConsole.swift; sourceTree = "<group>"; };
-		05CED8A02E06CF380028C549 /* Boot.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Boot.js; sourceTree = "<group>"; };
-		05CED8A12E06CF380028C549 /* Boot.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Boot.ts; sourceTree = "<group>"; };
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiUIKit.xcframework; path = ../../../Library/Frameworks/MultiUIKit.xcframework; sourceTree = "<group>"; };
@@ -300,8 +294,6 @@
 				05F71C902E058147008509D8 /* types */,
 				05F71C962E0581BC008509D8 /* Frame.js */,
 				05F71C972E0581BC008509D8 /* Frame.ts */,
-				05CED8A02E06CF380028C549 /* Boot.js */,
-				05CED8A12E06CF380028C549 /* Boot.ts */,
 				05F71C982E0581BC008509D8 /* Makefile */,
 			);
 			path = Library;

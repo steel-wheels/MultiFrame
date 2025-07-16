@@ -28,13 +28,11 @@ class ViewController: MIViewController
                         return
                 }
 
-                mRootView.boot(instanceName: "rootView", context: context)
-
                 let button0 = MFButton()
-                button0.boot(instanceName: "button0", context: context)
-
                 mRootView.addSubview(button0)
 
+                mRootView.boot(instanceName: "rootView", context: context)
+                button0.boot(instanceName: "button0", context: context)
         }
 
         override var representedObject: Any? {
