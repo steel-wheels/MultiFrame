@@ -19,7 +19,7 @@ public class MFButton: MIButton, MFFrame
         static let TitlePropertyName    = "title"
         static let ClickedEventName     = "clicked"
 
-        private var mContext:   JSContext?   = nil
+        private var mContext:   MFContext?   = nil
         private var mCore:      MFFrameCore? = nil
 
         public var frameName: String { get {
@@ -34,7 +34,7 @@ public class MFButton: MIButton, MFFrame
                 }
         }}
 
-        public func boot(instanceName iname: String, context ctxt: JSContext){
+        public func boot(instanceName iname: String, context ctxt: MFContext){
                 let core = MFFrameCore(frameName: MFButton.FrameName, context: ctxt)
 
                 /* add listner for title */

@@ -21,20 +21,18 @@ class ViewController: UIViewController
                 // Do any additional setup after loading the view.
 
                 // Do any additional setup after loading the view.
-                let context: JSContext
-                let vm      = JSVirtualMachine()
-                if let ctxt = JSContext(virtualMachine: vm) {
-                        context = ctxt
-                } else {
-                        NSLog("[Error] Failed to allocate context")
-                        return
-                }
+                let vm   = JSVirtualMachine()
+                let ctxt = MFContext(virtualMachine: vm)
 
+                if let err = MFLoader.loadBootScript(context: ctxt) {
+                        NSLog("[Error] \(MIError.toString(error: err))")
+                }
+                
                 let button0 = MFButton()
                 mRootView.addSubview(button0)
 
-                mRootView.boot(instanceName: "rootView", context: context)
-                button0.boot(instanceName: "button0", context: context)
+                mRootView.boot(instanceName: "rootView", context: ctxt)
+                button0.boot(instanceName: "button0", context: ctxt)
         }
 }
 

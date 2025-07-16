@@ -17,7 +17,7 @@ public class MFRootView: MIStack, MFFrame
 {
         static let FrameName            = "Button"
 
-        private var mContext:   JSContext?   = nil
+        private var mContext:   MFContext?   = nil
         private var mCore:      MFFrameCore? = nil
 
         public var frameName: String { get {
@@ -32,7 +32,7 @@ public class MFRootView: MIStack, MFFrame
                 }
         }}
 
-        public func boot(instanceName iname: String, context ctxt: JSContext) {
+        public func boot(instanceName iname: String, context ctxt: MFContext) {
                 let core = MFFrameCore(frameName: MFRootView.FrameName, context: ctxt)
                 ctxt.setObject(core.toScriptValue(), forKeyedSubscript: iname as NSString)
                 mCore    = core

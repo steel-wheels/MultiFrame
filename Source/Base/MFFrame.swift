@@ -21,7 +21,7 @@ import JavaScriptCore
         var frameName: String { get }
         var core: MFFrameCore { get }
 
-        func boot(instanceName iname: String, context ctxt: JSContext)
+        func boot(instanceName iname: String, context ctxt: MFContext)
 }
 
 public extension MFFrame
@@ -54,14 +54,14 @@ public extension MFFrame
         private var mProperties:        MFObserverDictionary
         private var mChildren:          Array<MFFrame>
         private var mListnerHolders:    Array<ListnerHolder>
-        private var mContext:           JSContext
+        private var mContext:           MFContext
 
         public var parent:              MFFrame?
         public var children: Array<MFFrame> { get {
                 return mChildren
         }}
 
-        public init(frameName fname: String, context ctxt: JSContext) {
+        public init(frameName fname: String, context ctxt: MFContext) {
                 mFrameName      = fname
                 mProperties     = MFObserverDictionary()
                 mChildren       = []

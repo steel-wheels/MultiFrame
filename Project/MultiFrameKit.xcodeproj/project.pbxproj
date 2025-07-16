@@ -11,6 +11,10 @@
 		0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
 		0544D2102E27CBCD00D67A4F /* MFRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D20F2E27CBCD00D67A4F /* MFRootView.swift */; };
 		0544D2112E27CBCD00D67A4F /* MFRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D20F2E27CBCD00D67A4F /* MFRootView.swift */; };
+		0544D2132E27DF6000D67A4F /* MFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2122E27DF6000D67A4F /* MFLoader.swift */; };
+		0544D2142E27DF6000D67A4F /* MFLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2122E27DF6000D67A4F /* MFLoader.swift */; };
+		0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
+		0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
 		05A0FC382E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
 		05A0FC392E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
 		05A0FC4C2E2716780021DF4A /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
@@ -34,8 +38,6 @@
 		05EEB71C2E07000F000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
 		05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
-		05F71CB82E05B1BD008509D8 /* MFScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */; };
-		05F71CB92E05B1BD008509D8 /* MFScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */; };
 		05FA0E522DFF0F7D00FB254C /* MFScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */; };
 		05FA0E532DFF0F7D00FB254C /* MFScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,8 @@
 /* Begin PBXFileReference section */
 		0519CD502DFEB35B004926F8 /* MFNativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNativeValue.swift; sourceTree = "<group>"; };
 		0544D20F2E27CBCD00D67A4F /* MFRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFRootView.swift; sourceTree = "<group>"; };
+		0544D2122E27DF6000D67A4F /* MFLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLoader.swift; sourceTree = "<group>"; };
+		0544D2152E27E66B00D67A4F /* MFContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFContext.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A0FC372E2558940021DF4A /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MFFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFrame.swift; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 		05F71C962E0581BC008509D8 /* Frame.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Frame.js; sourceTree = "<group>"; };
 		05F71C972E0581BC008509D8 /* Frame.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Frame.ts; sourceTree = "<group>"; };
 		05F71C982E0581BC008509D8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFScriptContext.swift; sourceTree = "<group>"; };
 		05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFScriptValue.swift; sourceTree = "<group>"; };
 		05FA0E582E02664300FB254C /* UnitTest_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -217,11 +220,12 @@
 			isa = PBXGroup;
 			children = (
 				05CED89D2E06CC110028C549 /* MFConsole.swift */,
+				0544D2152E27E66B00D67A4F /* MFContext.swift */,
 				05BDD2C22DFD678F00D4372C /* MFFrame.swift */,
 				05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */,
 				0519CD502DFEB35B004926F8 /* MFNativeValue.swift */,
 				05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */,
-				05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */,
+				0544D2122E27DF6000D67A4F /* MFLoader.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -514,9 +518,10 @@
 				0544D2112E27CBCD00D67A4F /* MFRootView.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05A0FC392E2558940021DF4A /* MFButton.swift in Sources */,
+				0544D2132E27DF6000D67A4F /* MFLoader.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */,
-				05F71CB92E05B1BD008509D8 /* MFScriptContext.swift in Sources */,
+				0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */,
 				05FA0E532DFF0F7D00FB254C /* MFScriptValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,9 +535,10 @@
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,
 				0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */,
+				0544D2142E27DF6000D67A4F /* MFLoader.swift in Sources */,
 				05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */,
 				05FA0E522DFF0F7D00FB254C /* MFScriptValue.swift in Sources */,
-				05F71CB82E05B1BD008509D8 /* MFScriptContext.swift in Sources */,
+				0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

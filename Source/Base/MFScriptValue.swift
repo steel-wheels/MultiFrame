@@ -24,7 +24,7 @@ public extension JSValue
                 }
         }
 
-        static func fromObject(object obj: NSObject, context ctxt: JSContext) -> JSValue {
+        static func fromObject(object obj: NSObject, context ctxt: MFContext) -> JSValue {
                 if let _ = obj as? NSNull {
                         return JSValue(nullIn: ctxt)
                 } else if let numobj = obj as? NSNumber {
