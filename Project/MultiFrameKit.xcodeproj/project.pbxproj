@@ -9,8 +9,16 @@
 /* Begin PBXBuildFile section */
 		0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
 		0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
+		0544D2102E27CBCD00D67A4F /* MFRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D20F2E27CBCD00D67A4F /* MFRootView.swift */; };
+		0544D2112E27CBCD00D67A4F /* MFRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D20F2E27CBCD00D67A4F /* MFRootView.swift */; };
 		05A0FC382E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
 		05A0FC392E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
+		05A0FC4C2E2716780021DF4A /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
+		05A0FC4D2E2716780021DF4A /* MultiDataKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05A0FC4E2E2716780021DF4A /* MultiFrameKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; };
+		05A0FC4F2E2716780021DF4A /* MultiFrameKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05A0FC502E2716780021DF4A /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
+		05A0FC512E2716780021DF4A /* MultiUIKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
@@ -26,9 +34,7 @@
 		05EEB71A2E07000F000CC067 /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 		05EEB71B2E07000F000CC067 /* MultiFrameKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; };
 		05EEB71C2E07000F000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
-		05F71CB22E058B81008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
 		05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
-		05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C942E0581BC008509D8 /* Application.js */; };
 		05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F71C962E0581BC008509D8 /* Frame.js */; };
 		05F71CB82E05B1BD008509D8 /* MFScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */; };
 		05F71CB92E05B1BD008509D8 /* MFScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F71CB72E05B1BD008509D8 /* MFScriptContext.swift */; };
@@ -54,6 +60,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		05A0FC522E2716780021DF4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05A0FC4F2E2716780021DF4A /* MultiFrameKit.xcframework in Embed Frameworks */,
+				05A0FC512E2716780021DF4A /* MultiUIKit.xcframework in Embed Frameworks */,
+				05A0FC4D2E2716780021DF4A /* MultiDataKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05F71CB12E058B69008509D8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,7 +81,6 @@
 			files = (
 				05CED8A22E06CFC70028C549 /* Boot.js in CopyFiles */,
 				05F71CB32E058B8B008509D8 /* Frame.js in CopyFiles */,
-				05F71CB22E058B81008509D8 /* Application.js in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +92,6 @@
 			files = (
 				05CED8A32E06CFD20028C549 /* Boot.js in CopyFiles */,
 				05F71CB62E058BBE008509D8 /* Frame.js in CopyFiles */,
-				05F71CB52E058BB8008509D8 /* Application.js in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +99,7 @@
 
 /* Begin PBXFileReference section */
 		0519CD502DFEB35B004926F8 /* MFNativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNativeValue.swift; sourceTree = "<group>"; };
+		0544D20F2E27CBCD00D67A4F /* MFRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFRootView.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A0FC372E2558940021DF4A /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MFFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFrame.swift; sourceTree = "<group>"; };
@@ -94,11 +112,8 @@
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiUIKit.xcframework; path = ../../../Library/Frameworks/MultiUIKit.xcframework; sourceTree = "<group>"; };
 		05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiFrameKit.xcframework; path = ../../../Library/Frameworks/MultiFrameKit.xcframework; sourceTree = "<group>"; };
-		05F71C912E0581A3008509D8 /* Application.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Application.d.ts; sourceTree = "<group>"; };
 		05F71C922E0581A3008509D8 /* Builtin.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Builtin.d.ts; sourceTree = "<group>"; };
 		05F71C932E0581A3008509D8 /* Frame.d.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Frame.d.ts; sourceTree = "<group>"; };
-		05F71C942E0581BC008509D8 /* Application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Application.js; sourceTree = "<group>"; };
-		05F71C952E0581BC008509D8 /* Application.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Application.ts; sourceTree = "<group>"; };
 		05F71C962E0581BC008509D8 /* Frame.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Frame.js; sourceTree = "<group>"; };
 		05F71C972E0581BC008509D8 /* Frame.ts */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.typescript; path = Frame.ts; sourceTree = "<group>"; };
 		05F71C982E0581BC008509D8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -148,6 +163,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A0FC4E2E2716780021DF4A /* MultiFrameKit.xcframework in Frameworks */,
+				05A0FC502E2716780021DF4A /* MultiUIKit.xcframework in Frameworks */,
+				05A0FC4C2E2716780021DF4A /* MultiDataKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				05A0FC372E2558940021DF4A /* MFButton.swift */,
+				0544D20F2E27CBCD00D67A4F /* MFRootView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -250,7 +269,6 @@
 		05F71C902E058147008509D8 /* types */ = {
 			isa = PBXGroup;
 			children = (
-				05F71C912E0581A3008509D8 /* Application.d.ts */,
 				05F71C922E0581A3008509D8 /* Builtin.d.ts */,
 				05F71C932E0581A3008509D8 /* Frame.d.ts */,
 			);
@@ -280,8 +298,6 @@
 			isa = PBXGroup;
 			children = (
 				05F71C902E058147008509D8 /* types */,
-				05F71C942E0581BC008509D8 /* Application.js */,
-				05F71C952E0581BC008509D8 /* Application.ts */,
 				05F71C962E0581BC008509D8 /* Frame.js */,
 				05F71C972E0581BC008509D8 /* Frame.ts */,
 				05CED8A02E06CF380028C549 /* Boot.js */,
@@ -339,6 +355,7 @@
 				059207F02E0A4CE600E19709 /* Sources */,
 				059207F12E0A4CE600E19709 /* Frameworks */,
 				059207F22E0A4CE600E19709 /* Resources */,
+				05A0FC522E2716780021DF4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -502,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
+				0544D2112E27CBCD00D67A4F /* MFRootView.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05A0FC392E2558940021DF4A /* MFButton.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */,
@@ -516,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
+				0544D2102E27CBCD00D67A4F /* MFRootView.swift in Sources */,
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,
 				0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */,

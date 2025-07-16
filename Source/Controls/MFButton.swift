@@ -34,10 +34,7 @@ public class MFButton: MIButton, MFFrame
                 }
         }}
 
-        public func setup(frame frm: CGRect, context ctxt: JSContext) {
-                mContext = ctxt
-                super.setup(frame: frm)
-
+        public func boot(instanceName iname: String, context ctxt: JSContext){
                 let core = MFFrameCore(frameName: MFButton.FrameName, context: ctxt)
 
                 /* add listner for title */
@@ -60,7 +57,9 @@ public class MFButton: MIButton, MFFrame
                         }
                 }
 
-                mCore = core
+                ctxt.setObject(core.toScriptValue(), forKeyedSubscript: iname as NSString)
+                mCore    = core
+                mContext = ctxt
         }
 }
 

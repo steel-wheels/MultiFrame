@@ -13,7 +13,7 @@ import Cocoa
 class ViewController: MIViewController
 {
 
-        @IBOutlet var mRootView: MIStack!
+        @IBOutlet var mRootView: MFRootView!
 
         override func viewDidLoad() {
                 super.viewDidLoad()
@@ -28,8 +28,11 @@ class ViewController: MIViewController
                         return
                 }
 
+                mRootView.boot(instanceName: "rootView", context: context)
+
                 let button0 = MFButton()
-                button0.setup(frame: CGRect(x: 0.0, y: 0.0, width: 120, height: 30), context: context)
+                button0.boot(instanceName: "button0", context: context)
+
                 mRootView.addSubview(button0)
 
         }

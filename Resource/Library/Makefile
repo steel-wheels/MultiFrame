@@ -3,7 +3,6 @@
 #
 
 src_scrs	= Frame.ts \
-		  Application.ts \
 		  Boot.ts
 dst_scrs	= $(src_scrs:.ts=.js)
 

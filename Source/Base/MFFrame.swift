@@ -20,6 +20,8 @@ import JavaScriptCore
 {
         var frameName: String { get }
         var core: MFFrameCore { get }
+
+        func boot(instanceName iname: String, context ctxt: JSContext)
 }
 
 public extension MFFrame
@@ -72,6 +74,10 @@ public extension MFFrame
                 for listner in mListnerHolders {
                         mProperties.removeObserver(listnerHolder: listner)
                 }
+        }
+
+        public func toScriptValue() -> JSValue {
+                return JSValue(object: self, in: mContext)
         }
 
         public func value(name nm: String) -> NSObject? {
