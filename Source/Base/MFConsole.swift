@@ -5,6 +5,7 @@
  *   Copyright (C) 2025 Steel Wheels Project
  */
 
+import MultiUIKit
 import JavaScriptCore
 import Foundation
 
@@ -14,13 +15,15 @@ import Foundation
         func error(_ name: JSValue)
 }
 
-@objc public class MFConsole: NSObject, MFConsoleProtorol
+@objc public class MFConsole: MIConsole, MFConsoleProtorol
 {
+        static public let InstanceName            = "console"
+
         public static let VariableName = "console"
 
         public func log(_ name: JSValue) {
                 if let str = name.toString() {
-                        NSLog(str)
+                        super.print(string: str)
                 } else {
                         NSLog("\(name)")
                 }
@@ -28,10 +31,16 @@ import Foundation
         
         public func error(_ name: JSValue)  {
                 if let str = name.toString() {
-                        NSLog(str)
+                        super.print(string: str)
                 } else {
                         NSLog("[Error] \(name)")
                 }
+        }
+
+        public static func boot(storage strg: MITextStorage, context ctxt: MFContext){
+                let console = MIConsole(storage: strg)
+                let value   = JSValue(object: console, in: ctxt)
+                ctxt.setObject(value, forKeyedSubscript: MFConsole.InstanceName as NSString)
         }
 }
 

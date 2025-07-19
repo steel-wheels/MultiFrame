@@ -19,8 +19,8 @@ public class MFButton: MIButton, MFFrame
         static let TitlePropertyName    = "title"
         static let ClickedEventName     = "clicked"
 
-        private var mContext:   MFContext?   = nil
         private var mCore:      MFFrameCore? = nil
+        private var mContext:   MFContext?   = nil
 
         public var frameName: String { get {
                 return MFButton.FrameName
