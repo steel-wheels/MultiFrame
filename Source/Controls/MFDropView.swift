@@ -13,7 +13,7 @@ import  AppKit
 import  UIKit
 #endif  // os(OSX)
 
-public class MFDropView: MIDropView, MFFrame
+open class MFDropView: MIDropView, MFFrame
 {
         static let FrameName            = "Button"
 

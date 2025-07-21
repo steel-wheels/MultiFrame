@@ -5,6 +5,7 @@
  *   Copyright (C) 2025 Steel Wheels Project
  */
 
+import MultiUIKit
 import MultiDataKit
 import Foundation
 import JavaScriptCore
