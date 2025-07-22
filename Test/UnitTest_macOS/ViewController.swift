@@ -22,10 +22,6 @@ class ViewController: MIViewController
                 let vm   = JSVirtualMachine()
                 let ctxt = MFContext(virtualMachine: vm)
 
-                if let err = MFLoader.loadBootScript(context: ctxt) {
-                        NSLog("[Error] \(MIError.toString(error: err))")
-                }
-
                 let button0 = MFButton()
                 mRootView.addSubview(button0)
 
