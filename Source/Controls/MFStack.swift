@@ -1,6 +1,6 @@
 /**
- * @file        MFRootView.swift
- * @brief      Define MFRootView class
+ * @file        MFStack.swift
+ * @brief      Define MFStack class
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
  */
@@ -13,18 +13,17 @@ import  AppKit
 import  UIKit
 #endif  // os(OSX)
 
-/*
-public class MFRootView: MFStack
+public class MFStack: MIStack, MFFrame
 {
-        static let FrameName            = "Button"
+        static let FrameName = "Box"
 
         private var mContext:   MFContext?   = nil
         private var mCore:      MFFrameCore? = nil
 
         public var frameName: String { get {
-                return MFRootView.FrameName
+                return MFStack.FrameName
         }}
-
+        
         public var core: MFFrameCore { get {
                 if let core = mCore {
                         return core
@@ -34,11 +33,10 @@ public class MFRootView: MFStack
         }}
 
         public func boot(instanceName iname: String, context ctxt: MFContext) {
-                let core = MFFrameCore(frameName: MFRootView.FrameName, context: ctxt)
+                let core = MFFrameCore(frameName: MFStack.FrameName, context: ctxt)
                 ctxt.setObject(core.toScriptValue(), forKeyedSubscript: iname as NSString)
                 mCore    = core
                 mContext = ctxt
         }
 }
-*/
 

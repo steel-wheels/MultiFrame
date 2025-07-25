@@ -13,7 +13,7 @@ import JavaScriptCore
 class ViewController: UIViewController
 {
 
-        @IBOutlet var mRootView: MFRootView!
+        @IBOutlet var mRootView: MFStack!
 
         override func viewDidLoad() {
                 super.viewDidLoad()

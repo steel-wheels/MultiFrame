@@ -21,6 +21,8 @@
 		05A0FC4F2E2716780021DF4A /* MultiFrameKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05A0FC502E2716780021DF4A /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05A0FC512E2716780021DF4A /* MultiUIKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05B0FB3D2E31387C00C7FAC6 /* MFStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */; };
+		05B0FB3E2E31387C00C7FAC6 /* MFStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */; };
 		05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
@@ -79,6 +81,7 @@
 		0544D2152E27E66B00D67A4F /* MFContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFContext.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A0FC372E2558940021DF4A /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
+		05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFStack.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MFFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFrame.swift; sourceTree = "<group>"; };
 		05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiDataKit.xcframework; path = ../../../Library/Frameworks/MultiDataKit.xcframework; sourceTree = "<group>"; };
 		05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFObserverDictionary.swift; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 				05A0FC372E2558940021DF4A /* MFButton.swift */,
 				05E346D92E2BBABA009DFD0D /* MFDropView.swift */,
 				0544D20F2E27CBCD00D67A4F /* MFRootView.swift */,
+				05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -465,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
+				05B0FB3D2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				0544D2112E27CBCD00D67A4F /* MFRootView.swift in Sources */,
 				05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
@@ -481,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
+				05B0FB3E2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				0544D2102E27CBCD00D67A4F /* MFRootView.swift in Sources */,
 				05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,

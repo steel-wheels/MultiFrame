@@ -15,9 +15,9 @@ import  UIKit
 
 public class MFButton: MIButton, MFFrame
 {
-        static let FrameName            = "Button"
-        static let TitlePropertyName    = "title"
-        static let ClickedEventName     = "clicked"
+        public static let FrameName            = "Button"
+        public static let TitleSlotName        = "title"
+        public static let ClickedEventName     = "clicked"
 
         private var mCore:      MFFrameCore? = nil
         private var mContext:   MFContext?   = nil
@@ -38,12 +38,12 @@ public class MFButton: MIButton, MFFrame
                 let core = MFFrameCore(frameName: MFButton.FrameName, context: ctxt)
 
                 /* add listner for title */
-                core.addObserver(name: MFButton.TitlePropertyName, listner: {
+                core.addObserver(name: MFButton.TitleSlotName, listner: {
                         (val: Any?) -> Void in
                         if let str = val as? NSString {
                                 super.title = str as String
                         } else {
-                                NSLog("[Error] Unexpected \(MFButton.TitlePropertyName) value in \(#file)")
+                                NSLog("[Error] Unexpected \(MFButton.TitleSlotName) value in \(#file)")
                         }
                 })
 
