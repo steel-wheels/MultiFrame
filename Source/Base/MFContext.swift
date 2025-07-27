@@ -42,6 +42,8 @@ public class MFContext: JSContext
         public var exceptionCallback    : ExceptionCallback
         private var mErrorCount         : Int
 
+        public var errorCount: Int { get { return mErrorCount }}
+
         public override init(virtualMachine vm: JSVirtualMachine?) {
                 exceptionCallback = {
                         (_ exception: MFException) -> Void in
@@ -78,5 +80,11 @@ public class MFContext: JSContext
                         return MIError.error(errorCode: .fileError,
                                              message: "Failed to load from URL \(url.path)")
                 }
+        }
+
+        public func execute(script scr: String) -> Int {
+                let preverr = mErrorCount
+                self.evaluateScript(scr)
+                return mErrorCount - preverr
         }
 }
