@@ -32,8 +32,17 @@ open class MFDropView: MIDropView, MFFrame
                 }
         }}
 
-        public func boot(instanceName iname: String, context ctxt: MFContext) {
+        public init(context ctxt: MFContext){
+                let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
+                super.init(frame: frame)
+
+                let core = MFFrameCore(frameName: MFDropView.FrameName, context: ctxt)
+                mCore    = core
                 mContext = ctxt
+        }
+
+        @MainActor @preconcurrency required dynamic public init?(coder: NSCoder) {
+                fatalError("init(coder:) has not been implemented")
         }
 }
 

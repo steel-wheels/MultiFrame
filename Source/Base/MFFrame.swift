@@ -21,8 +21,6 @@ import JavaScriptCore
 {
         var frameName: String { get }
         var core: MFFrameCore { get }
-
-        func boot(instanceName iname: String, context ctxt: MFContext)
 }
 
 public extension MFFrame

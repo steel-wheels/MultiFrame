@@ -21,6 +21,12 @@ import Foundation
 
         public static let VariableName = "console"
 
+        public static func setup(storage strg: MITextStorage, context ctxt: MFContext){
+                let console = MIConsole(storage: strg)
+                let value   = JSValue(object: console, in: ctxt)
+                ctxt.setObject(value, forKeyedSubscript: MFConsole.InstanceName as NSString)
+        }
+
         public func log(_ name: JSValue) {
                 if let str = name.toString() {
                         super.print(string: str)
@@ -35,12 +41,6 @@ import Foundation
                 } else {
                         NSLog("[Error] \(name)")
                 }
-        }
-
-        public static func boot(storage strg: MITextStorage, context ctxt: MFContext){
-                let console = MIConsole(storage: strg)
-                let value   = JSValue(object: console, in: ctxt)
-                ctxt.setObject(value, forKeyedSubscript: MFConsole.InstanceName as NSString)
         }
 }
 

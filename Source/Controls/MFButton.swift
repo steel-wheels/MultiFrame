@@ -34,7 +34,10 @@ public class MFButton: MIButton, MFFrame
                 }
         }}
 
-        public func boot(instanceName iname: String, context ctxt: MFContext){
+        public init(context ctxt: MFContext){
+                let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
+                super.init(frame: frame)
+
                 let core = MFFrameCore(frameName: MFButton.FrameName, context: ctxt)
 
                 /* add listner for title */
@@ -57,9 +60,12 @@ public class MFButton: MIButton, MFFrame
                         }
                 })
 
-                ctxt.setObject(core.toScriptValue(), forKeyedSubscript: iname as NSString)
                 mCore    = core
                 mContext = ctxt
+        }
+        
+        @MainActor @preconcurrency required dynamic init?(coder: NSCoder) {
+                fatalError("init(coder:) has not been implemented")
         }
 }
 
