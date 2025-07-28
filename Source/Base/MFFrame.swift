@@ -102,7 +102,7 @@ public extension MFFrame
                 guard let nmstr = _name(name: name) else {
                         return JSValue(bool: false, in: mContext)
                 }
-                mProperties.setValue(val.toObject(), forKey: nmstr)
+                mProperties.setValue(val, forKey: nmstr)
                 return JSValue(bool: true, in: mContext)
         }
 
