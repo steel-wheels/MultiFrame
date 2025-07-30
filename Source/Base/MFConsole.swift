@@ -29,7 +29,7 @@ import Foundation
 
         public func log(_ name: JSValue) {
                 if let str = name.toString() {
-                        super.print(string: str)
+                        super.print(string: str + "\n")
                 } else {
                         NSLog("\(name)")
                 }
