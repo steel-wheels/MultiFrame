@@ -51,7 +51,7 @@ public class MFButton: MIButton, MFFrame
                 })
 
                 /* set callback for the click */
-                super.setCallback({
+                super.setButtonPressedCallback({
                         () -> Void in
                         //NSLog("(\(#function) clicked")
                         if let obj = core.value(name: MFButton.ClickedEventName) as? JSValue {
