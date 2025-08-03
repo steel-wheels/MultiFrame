@@ -50,6 +50,7 @@ public extension MFFrame
         public typealias ListnerHolder    = MFObserverDictionary.ListnerHolder
 
         private var mFrameName:         String
+        private var mFrameId:           Int
         private var mProperties:        MFObserverDictionary
         private var mChildren:          Array<MFFrame>
         private var mListnerHolders:    Array<ListnerHolder>
@@ -60,8 +61,9 @@ public extension MFFrame
                 return mChildren
         }}
 
-        public init(frameName fname: String, context ctxt: MFContext) {
+        public init(frameName fname: String, frameId fid: Int, context ctxt: MFContext) {
                 mFrameName      = fname
+                mFrameId        = fid
                 mProperties     = MFObserverDictionary()
                 mChildren       = []
                 mListnerHolders = []

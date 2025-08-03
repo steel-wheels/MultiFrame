@@ -13,7 +13,7 @@ import Cocoa
 class ViewController: MIViewController
 {
 
-        @IBOutlet var mRootView: MFStack!
+        @IBOutlet var mRootView: MIStack!
 
         override func viewDidLoad() {
                 super.viewDidLoad()
@@ -22,11 +22,8 @@ class ViewController: MIViewController
                 let vm   = JSVirtualMachine()
                 let ctxt = MFContext(virtualMachine: vm)
 
-                let button0 = MFButton(context: ctxt)
+                let button0 = MFButton(context: ctxt, frameId: 0)
                 mRootView.addSubview(button0)
-
-                mRootView.boot(instanceName: "rootView", context: ctxt)
-                button0.boot(instanceName: "button0", context: ctxt)
         }
 
         override var representedObject: Any? {

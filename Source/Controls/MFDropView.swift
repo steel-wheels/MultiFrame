@@ -32,11 +32,11 @@ open class MFDropView: MIDropView, MFFrame
                 }
         }}
 
-        public init(context ctxt: MFContext){
+        public init(context ctxt: MFContext, frameId fid: Int){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
 
-                let core = MFFrameCore(frameName: MFDropView.FrameName, context: ctxt)
+                let core = MFFrameCore(frameName: MFDropView.FrameName, frameId: fid, context: ctxt)
                 mCore    = core
                 mContext = ctxt
         }

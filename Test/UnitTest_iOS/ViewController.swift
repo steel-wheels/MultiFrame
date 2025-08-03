@@ -13,7 +13,7 @@ import JavaScriptCore
 class ViewController: UIViewController
 {
 
-        @IBOutlet var mRootView: MFStack!
+        @IBOutlet var mRootView: MIStack!
 
         override func viewDidLoad() {
                 super.viewDidLoad()
@@ -24,11 +24,8 @@ class ViewController: UIViewController
                 let vm   = JSVirtualMachine()
                 let ctxt = MFContext(virtualMachine: vm)
                 
-                let button0 = MFButton()
+                let button0 = MFButton(context: ctxt, frameId: 0)
                 mRootView.addSubview(button0)
-
-                mRootView.boot(instanceName: "rootView", context: ctxt)
-                button0.boot(instanceName: "button0", context: ctxt)
         }
 }
 

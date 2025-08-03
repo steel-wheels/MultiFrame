@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-L0-SqV" userLabel="Stack View" customClass="MFStack" customModule="MultiFrameKit">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-L0-SqV" userLabel="Stack View" customClass="MIStack" customModule="MultiUIKit">
                                 <rect key="frame" x="16" y="118" width="361" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mRootView" destination="3gd-L0-SqV" id="ShC-AB-5SN"/>
+                        <outlet property="mRootView" destination="3gd-L0-SqV" id="CHQ-jC-fIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
