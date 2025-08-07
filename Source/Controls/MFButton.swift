@@ -37,6 +37,7 @@ public class MFButton: MIButton, MFFrame
         public init(context ctxt: MFContext, frameId fid: Int){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
+                self.coreTag = fid
 
                 let core = MFFrameCore(frameName: MFButton.FrameName, frameId: fid, context: ctxt)
 
